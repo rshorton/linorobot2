@@ -85,7 +85,7 @@ def generate_launch_description():
             output='screen',
             remappings=[('scan', LaunchConfiguration('topic_name'))],
             parameters=[{
-                'serial_port': '/dev/ttyUSB0',
+                'serial_port': '/dev/rplidar',
                 'serial_baudrate': 115200,  # A1 / A2
                 'frame_id': LaunchConfiguration('frame_id'),
                 'inverted': False,
