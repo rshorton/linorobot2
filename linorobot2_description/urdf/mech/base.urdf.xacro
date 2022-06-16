@@ -7,11 +7,11 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <box size="${length} ${width} ${height}"/>
-          <!-- <mesh filename="" scale="0.001 0.001 0.001"/> -->
+          <!-- box size="${length} ${width} ${height}"/ -->
+          <mesh filename="package://linorobot2_description/meshes/elsabot_4wd.stl" scale="1.0 1.0 1.0"/> -->
         </geometry>
-        <material name="yellow">
-          <color rgba="0.8784 0.6627 0.6627 1.0"/>
+        <material name="gray">
+          <color rgba="0.8 0.8 0.8 1.0"/>
         </material>
       </visual>
       

@@ -6,7 +6,8 @@
   <xacro:include filename="$(find linorobot2_description)/urdf/mech/wheel.urdf.xacro" />
   <xacro:include filename="$(find linorobot2_description)/urdf/sensors/imu.urdf.xacro" />
   <xacro:include filename="$(find linorobot2_description)/urdf/sensors/generic_laser.urdf.xacro" />
-  <xacro:include filename="$(find linorobot2_description)/urdf/sensors/depth_sensor.urdf.xacro" />
+  <!--xacro:include filename="$(find linorobot2_description)/urdf/sensors/depth_sensor.urdf.xacro" /-->
+  <xacro:include filename="$(find linorobot2_description)/urdf/sensors/oakd_on_ptbase.urdf.xacro" />
   <xacro:include filename="$(find linorobot2_description)/urdf/controllers/skid_steer.urdf.xacro" />
 
   <xacro:base 

@@ -5,16 +5,16 @@
   <xacro:property name="base_height" value="0.180" />
   <xacro:property name="base_mass" value="10" />
 
-  <xacro:property name="wheel_radius" value="0.078" />
+  <xacro:property name="wheel_radius" value="0.0795" />
   <xacro:property name="wheel_width" value="0.047" />
   <xacro:property name="wheel_pos_x" value="0.1505" />
   <xacro:property name="wheel_pos_y" value="0.1925" />
-  <xacro:property name="wheel_pos_z" value="-0.012" />
+  <xacro:property name="wheel_pos_z" value="-0.1105" />
   <xacro:property name="wheel_mass" value=".6" />
   <xacro:property name="wheel_torque" value="12" />
 
   <xacro:property name="laser_pose">
-    <origin xyz="0.205 0 0.156" rpy="0 0 3.14"/>
+    <origin xyz="0.205 0 0.064" rpy="0 0 3.14"/>
   </xacro:property>
 
   <xacro:property name="depth_sensor_pose">

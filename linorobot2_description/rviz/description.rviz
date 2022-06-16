@@ -3,9 +3,10 @@ Panels:
     Help Height: 78
     Name: Displays
     Property Tree Widget:
-      Expanded: ~
+      Expanded:
+        - /RobotModel1
       Splitter Ratio: 0.5
-    Tree Height: 907
+    Tree Height: 737
 Visualization Manager:
   Class: ""
   Displays:
@@ -27,7 +28,7 @@ Visualization Manager:
       Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
       Value: true
-    - Alpha: 0.8999999761581421
+    - Alpha: 1
       Class: rviz_default_plugins/RobotModel
       Collision Enabled: false
       Description File: ""
@@ -54,21 +55,22 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        camera_link:
+        cam_pan_to_tilt_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+        cam_tilt_to_oakd_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         front_left_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         front_right_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         imu_link:
           Alpha: 1
           Show Axes: false
@@ -78,16 +80,34 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        oakd_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        oakd_center_camera:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        oakd_left_camera:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        oakd_right_camera:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         rear_left_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         rear_right_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
       Name: RobotModel
       TF Prefix: ""
       Update Interval: 0
@@ -102,7 +122,9 @@ Visualization Manager:
           Value: true
         base_link:
           Value: true
-        camera_link:
+        cam_pan_to_tilt_link:
+          Value: true
+        cam_tilt_to_oakd_base_link:
           Value: true
         front_left_wheel_link:
           Value: true
@@ -111,6 +133,14 @@ Visualization Manager:
         imu_link:
           Value: true
         laser:
+          Value: true
+        oakd_base_link:
+          Value: true
+        oakd_center_camera:
+          Value: true
+        oakd_left_camera:
+          Value: true
+        oakd_right_camera:
           Value: true
         rear_left_wheel_link:
           Value: true
@@ -124,8 +154,15 @@ Visualization Manager:
       Tree:
         base_footprint:
           base_link:
-            camera_link:
-              {}
+            cam_pan_to_tilt_link:
+              cam_tilt_to_oakd_base_link:
+                oakd_base_link:
+                  oakd_center_camera:
+                    {}
+                  oakd_left_camera:
+                    {}
+                  oakd_right_camera:
+                    {}
             front_left_wheel_link:
               {}
             front_right_wheel_link:
@@ -168,7 +205,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 0.6006462574005127
+      Distance: 1.6374975442886353
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -183,18 +220,18 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.4653983414173126
+      Pitch: 0.9697965979576111
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.7553982138633728
+      Yaw: 1.2554036378860474
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 1136
+  Height: 960
   Hide Left Dock: false
   Hide Right Dock: false
-  QMainWindow State: 000000ff00000000fd00000001000000000000015600000416fc0200000001fb000000100044006900730070006c006100790073010000003d00000416000000c900ffffff000005f40000041600000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
-  Width: 1872
-  X: 48
+  QMainWindow State: 000000ff00000000fd0000000100000000000001560000036afc0200000001fb000000100044006900730070006c006100790073010000003b0000036a000000c700ffffff000003a40000036a00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Width: 1280
+  X: 0
   Y: 27
